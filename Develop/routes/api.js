@@ -11,7 +11,18 @@ router.post("/api/workouts", ({ body }, res) => {
       });
   });
 
+
   //todo
   // /api/workouts/range
+  router.get("/api/workouts/range", function(req,res){
+    Workout.find({}) //get all the workouts
+      .then(() => {
+          res.send(workout);
+      })
+      .catch(err => {
+        res.status(400).json(err); //bad request
+      })
+  });
 
+//export our router
 module.exports = router;
