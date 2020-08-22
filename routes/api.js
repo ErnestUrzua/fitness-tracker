@@ -4,6 +4,7 @@ const Workout = require("../models/workout.js");
 //add a workout
 router.post("/api/workouts", ({ body }, res) => {
   Workout.create(body)
+    console.log(Workout)//not posting exercise
     .then(dbWorkout => {
       res.json(dbWorkout);
     })

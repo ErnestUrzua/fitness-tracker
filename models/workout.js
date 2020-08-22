@@ -33,6 +33,10 @@ const workoutSchema = new Schema({
             duration: {
                 type: Number
             },
+            exercise: {
+                type: String,
+                trim: true
+            },
             weight: {
                 type: Number,
                 default: 0
