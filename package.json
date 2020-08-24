@@ -9,6 +9,7 @@
     "watch": "nodemon server.js",
     "seed": "node seeders/seed.js"
   },
+  "homepage": "https://github.com/ErnestUrzua/fitness-tracker",
   "author": "",
   "license": "ISC",
   "dependencies": {
