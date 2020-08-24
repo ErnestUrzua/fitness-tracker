@@ -13,7 +13,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//allow our public forlder to be statically served
+//allow our public folder to be statically served
 app.use(express.static("public"));
 
 //our mongo server 
